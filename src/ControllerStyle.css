@@ -1,0 +1,103 @@
+.root{
+    -fx-background-color: #383838;
+    -fx-font-family: Consolas;
+    -fx-font-size: 13px;
+
+}
+.label{
+    -fx-text-fill: #ffffff;
+}
+.menu-bar{
+    -fx-background-color: black;
+}
+.menu-item .label {
+     -fx-text-fill: white;
+ }
+.menu-item:focused {
+    -fx-background-color: black;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: orange;
+}
+
+.context-menu {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color: black;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;
+    /*    -fx-padding: 0.666667em 0.083333em 0.666667em 0.083333em;  8 1 8 1 */
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em; /* 4 1 8 1 */
+}
+.choice-box .context-menu {
+    -fx-background-color: black;
+}
+.choice-box .menu-item:focused {
+    -fx-background-color: orange;
+}
+.choice-box .menu-item > .label {
+    -fx-text-fill: white;
+}
+.choice-box .menu-item:focused > .label {
+    -fx-text-fill: black;
+}
+.choice-box {
+    -fx-background-color: black;
+    -fx-mark-color: orange; // arrow color
+}
+.choice-box > .label {
+    -fx-text-fill: white;
+}
+#valid-message{
+    -fx-text-fill: #a1d3ff;
+    -fx-font-size: 10pt;
+    -fx-font-family: "Fira Code";
+}
+#error-message{
+    -fx-text-fill: red;
+    -fx-font-size: 10pt;
+    -fx-font-family: "Fira Code";
+}
+#welcomeMessage{
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 18pt;
+    -fx-font-family: Bahnschrift;
+}
+#round-red {
+    -fx-background-color: linear-gradient(#ff5400, #be1d00);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+}
+#rich-blue {
+    -fx-background-color:
+            #000000,
+            linear-gradient(#7ebcea, #2f4b8f),
+            linear-gradient(#426ab7, #263e75),
+            linear-gradient(#395cab, #223768);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+}
+#animate{
+    -fx-text-fill: #a1d3ff;
+    -fx-font-size: 17pt;
+    -fx-font-family: "Fira Code";
+}
+#rich-green {
+    -fx-background-color:
+            #000000,
+            linear-gradient(#7ebcea, #2f8f5e),
+            linear-gradient(#426ab7, #0a7505),
+            linear-gradient(#395cab, #026848);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+}
+.check-box{
+    -fx-text-fill: #a1d3ff;
+}
